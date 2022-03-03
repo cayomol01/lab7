@@ -1,0 +1,29 @@
+@import "bootstrap";
+
+
+#hd{
+    animation:pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+      color: red;
+    }
+    50% {
+      color: lightgrey;
+    }
+  }
+
+.jumbotron{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#img_container1{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    size: auto;
+}
+
+
+
