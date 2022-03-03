@@ -27,6 +27,28 @@ module.exports = {
               "sass-loader",
             ],
           },
+          {
+          test: /\.(gif|png|jpe?g)$/,
+          use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]',
+                  outputPath: 'img/',
+                  publicPath: 'img/'
+                }
+              }
+            ],
+          },
+          {
+            test: /\.mp3$/,
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'aud/',
+              publicPath: 'aud/'
+            }
+          },
         ],
       },
 }

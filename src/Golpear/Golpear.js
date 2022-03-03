@@ -1,6 +1,7 @@
 import {removeChildren} from "../remove.js";
 import {GoIndex} from "../index.js";
 import {GoFinal} from "../Final/Final.js";
+import NarizSangrando from '../Assets/NarizSangrando.jpg';
 
 
 export function GoGolpear(){
@@ -35,9 +36,9 @@ export function GoGolpear(){
 
     const img_container = document.createElement('div');
     img_container.classList  = "text-center";
-    const img = document.createElement('img');
+    const img = new Image();
     img_container.id = "imagen";
-    img.src = '../src/Assets/NarizSangrando.jpg';
+    img.src = NarizSangrando;
     img.alt = 'Habitación blanca';
     img_container.appendChild(img);
 

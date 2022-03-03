@@ -1,6 +1,7 @@
 import {removeChildren} from "../remove.js";
 import {GoIndex} from "../index.js";
 import './muerto.scss';
+import muerto from '../Assets/Muerto.jpg';
 
 export function GoMuerto(){
     const body = document.body;
@@ -30,10 +31,10 @@ export function GoMuerto(){
 
     const img_container = document.createElement('div');
     img_container.classList.add("text-center")
-    const img = document.createElement('img');
+    const img = new Image();
     img.id = "imagen1";
     img_container.id = "img_container1";
-    img.src = '../src/Assets/Muerto.jpg';
+    img.src = muerto;
     img.alt = 'Habitación blanca';
     img_container.appendChild(img);
 

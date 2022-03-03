@@ -1,5 +1,6 @@
 import {removeChildren} from "../remove.js";
 import {GoIndex} from "../index.js";
+import Casa from '../Assets/Casa.jpg';
 
 export function GoFinal(){
     const body = document.body;
@@ -35,9 +36,9 @@ export function GoFinal(){
 
     const img_container = document.createElement('div');
     img_container.classList  = "text-center";
-    const img = document.createElement('img');
+    const img = new Image();
     img_container.id = "imagen";
-    img.src = '../src/Assets/Casa.jpg';
+    img.src = Casa;
     img.alt = 'Libros';
     img_container.appendChild(img);
 

@@ -1,5 +1,10 @@
 import {removeChildren} from "../remove.js";
 import {GoIndex} from "../index.js";
+import libros from '../Assets/Libros.jpg';
+import Minismalismus from "../Assets/Minismalismus.jpg";
+import SplitTooth from "../Assets/SplitTooth.jpg";
+import NLG from "../Assets/NLG.jpg";
+import OCD from "../Assets/OCD.jpg";
 
 export function GoLeer(){
     const body = document.body;
@@ -23,10 +28,10 @@ export function GoLeer(){
     const s2 = document.createElement('summary');
     const s3 = document.createElement('summary');
     const s4 = document.createElement('summary');
-    const i1 = document.createElement('img');
-    const i2 = document.createElement('img');
-    const i3 = document.createElement('img');
-    const i4 = document.createElement('img');
+    const i1 = new Image();
+    const i2 = new Image();
+    const i3 = new Image();
+    const i4 = new Image();
     const lbl = document.createElement('label');
     const pgrss = document.createElement('progress');
 
@@ -40,10 +45,10 @@ export function GoLeer(){
 
     const img_container = document.createElement('div');
     img_container.classList.add("text-center")
-    const img = document.createElement('img');
+    const img = new Image();
     img.id = "imagen1";
     img_container.id = "img_container1";
-    img.src = '../src/Assets/Libros.jpg';
+    img.src = libros;
     img.alt = 'libros';
     img_container.appendChild(img);
 
@@ -67,10 +72,10 @@ export function GoLeer(){
     s3.innerText = "Split Tooth";
     s4.innerText = "Hope with OCD";
 
-    i1.src = "../src/Assets/Minismalismus.jpg";
-    i2.src = "../src/Assets/NLG.jpg";
-    i3.src = "../src/Assets/SplitTooth.jpg";
-    i4.src = "../src/Assets/OCD.jpg";
+    i1.src = Minismalismus;
+    i2.src = NLG;
+    i3.src = SplitTooth;
+    i4.src = OCD;
 
     lbl.for = 'progress';
     lbl.innerText = "Paciencia del impostor:  ";

@@ -2,7 +2,9 @@ import {removeChildren} from "./remove.js";
 import{GoMuerto} from "./Muerto/Muerto.js";
 import{GoDesastre} from "./Desastre/Desastre.js";
 import{GoComentario} from "./Comentario/Comentario.js";
+import{GoHablarle} from "./Hablarle/Hablarle.js";
 import{GoLeer} from "./LeerLibros/LeerLibros.js";
+import White_room from '../src/Assets/White_room.jpg';
 import './main.scss';
 
 export function GoIndex(){
@@ -49,9 +51,9 @@ export function GoIndex(){
 
     const img_container = document.createElement('div');
     img_container.classList  = "text-center";
-    const img = document.createElement('img');
+    const img = new Image();
     img_container.id = "imagen";
-    img.src = '../src/Assets/White_room.jpg';
+    img.src = White_room;
     img.alt = 'Habitación blanca';
     img_container.appendChild(img);
 
@@ -84,7 +86,7 @@ export function GoIndex(){
     a2.onclick = GoMuerto;
     a2.href = "javascript:void(0);";
     a2.innerText = "Golpearlo cuando menos se lo espere";
-    a3.onclick = "GoHablarle";
+    a3.onclick = GoHablarle;
     a3.href = "javascript:void(0);";
     a3.innerText = "Hablarle e intentar de empatizar con él";
     a4.onclick = GoLeer;

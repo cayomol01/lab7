@@ -1,5 +1,6 @@
 import {removeChildren} from "../remove.js";
 import {GoIndex} from "../index.js";
+import libros from '../Assets/Libros.jpg';
 
 export function GoComentario(){
     const body = document.body;
@@ -30,9 +31,9 @@ export function GoComentario(){
 
     const img_container = document.createElement('div');
     img_container.classList  = "text-center";
-    const img = document.createElement('img');
+    const img = new Image();
     img_container.id = "imagen";
-    img.src = '../src/Assets/Libros.jpg';
+    img.src = libros;
     img.alt = 'Libros';
     img_container.appendChild(img);
 

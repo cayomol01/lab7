@@ -2,7 +2,7 @@ import {removeChildren} from "../remove.js";
 import{GoMuerto} from "../Muerto/Muerto.js";
 import{GoGolpear} from "../Golpear/Golpear.js";
 import {GoIndex} from "../index.js";
-
+import Sangre from '../Assets/Sangre.jpg';
 
 export function GoDesastre(){
     const body = document.body;
@@ -41,9 +41,9 @@ export function GoDesastre(){
 
     const img_container = document.createElement('div');
     img_container.classList  = "text-center";
-    const img = document.createElement('img');
+    const img = new Image();
     img_container.id = "imagen";
-    img.src = '../src/Assets/Sangre.jpg';
+    img.src = Sangre;
     img.alt = 'Habitación blanca';
     img_container.appendChild(img);
 
