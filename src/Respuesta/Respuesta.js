@@ -3,7 +3,7 @@ import{GoMuerto} from "../Muerto/Muerto.js";
 import{GoDesastre} from "../Desastre/Desastre.js";
 import{GoEscapar} from "../Escapar/Escapar.js";
 import{GoAtrapado} from "../Atrapado/Atrapado.js";
-import{GoIndex} from "../Index.js";
+import{GoIndex} from "../index.js";
 import audio from '../Assets/Respuesta.mp3';
 import '../main.scss';
 
