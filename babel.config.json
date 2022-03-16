@@ -3,7 +3,7 @@
     "presets": [["@babel/env", {
         "corejs" : 3.21, 
         "useBuiltIns" : "usage",
-        "debug":true,
+        "debug":false,
         "targets": "> 0.10%, not dead"
     }]],
     "plugins": [

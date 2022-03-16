@@ -11,7 +11,7 @@ module.exports = {
      },
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "bundle_ConBabel"),
+        path: path.resolve(__dirname, "bundle_sinBabel"),
     }, 
     plugins: [
         new CleanWebpackPlugin(),
@@ -41,11 +41,7 @@ module.exports = {
                     }
                   ],
                 },
-                {
-                  test: /\.js$/,
-                  exclude: /node_modules/,
-                  use: "babel-loader",
-                },
+
                 {
                   test: /\.mp3$/,
                   loader: 'file-loader',
