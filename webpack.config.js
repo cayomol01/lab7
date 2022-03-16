@@ -11,7 +11,7 @@ module.exports = {
      },
     output: {
         filename: "bundle.js",
-        path: path.resolve(__dirname, "bundle_sinBabel"),
+        path: path.resolve(__dirname, "bundle_ConBabel"),
     }, 
     plugins: [
         new CleanWebpackPlugin(),
