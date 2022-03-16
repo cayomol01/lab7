@@ -7,7 +7,7 @@ import{GoIndex} from "../index.js";
 import audio from '../Assets/Respuesta.mp3';
 import '../main.scss';
 
-export function GoRespuesta(){
+export const GoRespuesta = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);
@@ -68,6 +68,8 @@ export function GoRespuesta(){
     rows.classList.add('row', 'justify-content-center');
     content.classList.add('col-md-6');
     p1.innerHTML = "Por lo que has visto, el impostor no se ha puesto para nada enojado pero si te da miedo. Sientes que algo malo va a pasar en especial por que se está riendo despiadadamente mientras camina hacia ti. Su caminar es lento, pero por alguna razón sientes una amenaza increíble. Sabes que debes hacer algo, pero no sabes que.";
+    p1.innerHTML = p1.innerHTML.trimEnd();
+    
     a1.onclick = GoEscapar;
     a1.href = "javascript:void(0);";
     a1.innerText = "Correr";
@@ -121,5 +123,3 @@ export function GoRespuesta(){
     
 
 }
-
-GoIndex();

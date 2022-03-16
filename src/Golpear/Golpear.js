@@ -60,6 +60,10 @@ export function GoGolpear(){
     p2.innerHTML = "Esta es tu oportunidad! Debes aprovecharla. Por ello empiezas a buscar dentro de su  ropa intentando encontrar la llave que abre la puerta de esta tortura blanca. Después un tiempo encuentras la llave justo en su zapato y la agarras. Mientras vas corriendo  hacia la puerta puedes ver oir que el impostor se está levantando.";
     p3.innerHTML = "llegas a la puerta y la intentas abrir pero no puedes introducir la llave a la manija de lo asustado que estas. El impostor se logra levantar y empieza a caminar hacia ti  con la nariz completamente ensangrientada. Su cara parece la de un muerto, tiene los  ojos abiertos como si pudiera ver el futuro. Por ello te apresuras abrir la puerta y  logras meter la llave.";
     p4.innerHTML = "Justo cuando el impostor se encuentra a 2 metros de ti, logras abrir la puerta y finalmente logras ver lo que hay al otro lado de la misma. Unas escalareas empinadas. Te apresuras a subirlas y llegas a lo que parece ser un ";
+    p1.innerHTML = p1.innerHTML.trimEnd();
+    p2.innerHTML = p2.innerHTML.trimEnd();
+    p3.innerHTML = p3.innerHTML.trimEnd();
+    p4.innerHTML = p4.innerHTML.trimEnd();
     lbl.for = 'progress';
     lbl.innerText = "Paciencia del impostor:  ";
     pgrss.id = "progress";

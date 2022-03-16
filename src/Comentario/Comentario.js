@@ -2,7 +2,7 @@ import {removeChildren} from "../remove.js";
 import {GoIndex} from "../index.js";
 import libros from '../Assets/Libros.jpg';
 
-export function GoComentario(){
+export const GoComentario = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);
@@ -56,7 +56,9 @@ export function GoComentario(){
     p1.innerHTML = "Se pueden ver varios beneficios de aprender UX design. De primero se puede ver que es un trabajo que siempre va a proveer. Muchas compañias siempre tratan de hace ya sean apps o incluso páginas web. Debido a esto es muy posible que se pueda encontrar trabajo muy rápido ya que está en alta demanda. Por otro lado, la paga también puede ser muy buena dependiendo del lugar en el que se trabaje.";
     p2.innerHTML = " Claro, aprender UX tampoco es fácil. Se requiere de dedicación, creatividad, teoría y ser observador. Además nunca se dejará de aprender pues siempre se irán cambiando las prácticas necesarias para realizar un buen UX design. ";
     p3.innerHTML = "Una vez se tenga esto en mente se puede empezar en el ámbito del UX design. Pero, para que sirve estudiar esto aparte de ganar dinero y pues hacer cosas bonitas. El UX (User Experience) se basa en la experiencia del usuario tal y como lo dic su nombre. Por eso mismo, no solo es importante que las cosas se vean bonitas sin que sean funcionales para varios grupos de personas con distintas habilidades. Po ejemplo, es necesario tomar en cuenta a las personas daltónicas en el uso de colore y también a personas con discapacidades en el ámbito de que tan cerca se encuentren los botónes unos de los otros. Incluso sin irse tan lejos, hay que saber como la personas reaccionaran incluso a la forma de un botón o al orden de las cosas. Por l tanto es bueno saber sobre este tema se dedique uno a esto o no. Mejorará nuestr relaciones con humanos y nos hará más empáticos en general." ;  
-
+    p1.innerHTML = p1.innerHTML.trimEnd();
+    p2.innerHTML = p2.innerHTML.trimEnd();
+    p3.innerHTML = p3.innerHTML.trimEnd();
     //body adding
     container.appendChild(img_container);
     container.appendChild(rows);

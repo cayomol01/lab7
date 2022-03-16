@@ -1,7 +1,7 @@
 
 
 
-export function removeChildren(parent) {
+export const removeChildren = (parent) =>{
     if (parent.firstChild != null){
         while (parent.firstChild) {
             console.log("hola");

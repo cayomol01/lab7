@@ -4,7 +4,7 @@ import{GoGolpear} from "../Golpear/Golpear.js";
 import {GoIndex} from "../index.js";
 import Sangre from '../Assets/Sangre.jpg';
 
-export function GoDesastre(){
+export const GoDesastre = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);
@@ -64,6 +64,9 @@ export function GoDesastre(){
     p1.innerHTML = "Piensas que la mejor manera de obtener la atención del impostor es haciendo un desastre y por lo tanto decides darle un poco de color a tu cuarto. Para ello, te empiezas a rascar el brazo de forma rápida y muy fuerte hasta que logras sacar sangre. Te duele como nunca pero decides continuar haciendolo...";
     p2.innerHTML = "Una vez miras que las gotas de sangre saliendo de tu brazo son lo suficientemente grandes, empiezas a dejarlas caer alrededor de tu cuarto. Creando una hermosa pintura creada por ti mismo literalmente. Ahora solo te queda  esperar a que el impostor llegue a ver esta 'obra de arte'.";
     p3.innerHTML = "Cuando llega el impostor, ve el desastre y empieza a gritarte pero las palabras no te hacen sentido, lo unico en lo que piensas es escapar. Piensas con qué deberías pegarle:"
+    p1.innerHTML = p1.innerHTML.trimEnd();
+    p2.innerHTML = p2.innerHTML.trimEnd();
+    p3.innerHTML = p3.innerHTML.trimEnd();
     a1.onclick = GoMuerto;
     a1.href = "javascript:void(0);";
     a1.innerText = "Pegar con tus puños";

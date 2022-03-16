@@ -3,7 +3,7 @@ import {GoIndex} from "../index.js";
 import './muerto.scss';
 import muerto from '../Assets/Muerto.jpg';
 
-export function GoMuerto(){
+export const GoMuerto = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);
@@ -53,6 +53,7 @@ export function GoMuerto(){
     rows.classList.add('row', 'justify-content-center');
     content.classList.add('col-md-6');
     p1.innerHTML = "Lo que has intentando hacer no ha funcionado en lo absoluto. El impostor es lo suficientemente fuerte para ganarte en una lucha. Debido a tu alimentación, no estas nutrido para nada y simplemente no has  crecido como se debería para alguien de tu edad. Debes aprovecharte de tu ambiente y de las debilidades  del impostor para poder ganarle. "
+    p1.innerHTML = p1.innerHTML.trimEnd();
     lbl.for = 'progress';
     lbl.innerText = "Paciencia del impostor:  ";
     pgrss.id = "progress";

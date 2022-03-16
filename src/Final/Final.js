@@ -2,7 +2,7 @@ import {removeChildren} from "../remove.js";
 import {GoIndex} from "../index.js";
 import Casa from '../Assets/Casa.jpg';
 
-export function GoFinal(){
+export const GoFinal = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);
@@ -63,6 +63,12 @@ export function GoFinal(){
     p4.innerHTML = "Te comienzas a cuestionar si todas las casas son iguales y por desgracia si lo son. No hay a quien  pedir ayuda. Tu unica opción es correr y salir de esta cuadra. A lo largo de la calle puedes ver que  ya no hay casas blancas y por lo tanto decides correr hacia ahi. Lo unico en lo que piensas es tu  libertad incondicional. Cada vez más cerca, ya casi lo puedes sentir."
     p5.innerHTML = "usto cuando se terminan las casas puedes ver a una persona parada al final de la calle. Es un hombre, con pelo blanco pero vestido de negro. Esta de espaldas por lo que no le puedes ver la cara. Te acercas  a el y lo saludas. Cuando se dá la vuelta, puedes ver que el hombre en realidad es tu papá. No entiendes  que es lo que te esta pasando."
     p6.innerHTML = "El hombre te mira fijamente sin hablar. Hasta que por fin habla y dice:  Felicitaciones hijo! Has pasado la primera prueba, el calabozo blanco.  Es un gusto poder verte despues de tantos años, estoy muy orgulloso de ti.  Estoy seguro que podrás pasar la siguientes pruebas por ello dejame llevarte  a tu siguiente exámen. "
+    p1.innerHTML = p1.innerHTML.trimEnd();
+    p2.innerHTML = p2.innerHTML.trimEnd();
+    p3.innerHTML = p3.innerHTML.trimEnd();
+    p4.innerHTML = p4.innerHTML.trimEnd();
+    p5.innerHTML = p5.innerHTML.trimEnd();
+    p6.innerHTML = p6.innerHTML.trimEnd();
     lbl.for = 'progress';
     lbl.innerText = "Evaluación completada:   ";
     pgrss.id = "progress";

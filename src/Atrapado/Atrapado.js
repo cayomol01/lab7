@@ -3,7 +3,7 @@ import {GoIndex} from "../index.js";
 import Cama from '../Assets/cama.jpg';
 
 
-export function GoAtrapado(){
+export const GoAtrapado = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);
@@ -56,6 +56,9 @@ export function GoAtrapado(){
     p1.innerHTML = "El impostor ha llegado hacia ti y te ha atrapado! Ni si quiera has dado pelea de lo decepcionado que estás contigo mismo. No logras transmitir palabras no sabes que hacer con tu vida. Lentamente el impostor te va dejando en tu cama hasta que quedas completamente acostado boca arriba. Tu cuerpo permanece quieto,puede que no hayas muerto pero murio tu esperanza de vivir.";
     p2.innerHTML = "El impostor amarra cada una de tus extremidades a la cama y comienza a reirse. Ya se ha calmado pues sabe que tiene una compañia que nunca se podrá ir. Pasaras el resto de tus días aquí acostado sin poder hacer algo y lo más probable es que mueras en este cuarto blanco.";
     p3.innerHTML = "<b>Ese es tu destino...</b>";
+    p1.innerHTML = p1.innerHTML.trimEnd();
+    p2.innerHTML = p2.innerHTML.trimEnd();
+    p3.innerHTML = p3.innerHTML.trimEnd();
     lbl.for = 'progress';
     lbl.innerText = "Paciencia del impostor:  ";
     pgrss.id = "progress";

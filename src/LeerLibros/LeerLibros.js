@@ -6,7 +6,7 @@ import SplitTooth from "../Assets/SplitTooth.jpg";
 import NLG from "../Assets/NLG.jpg";
 import OCD from "../Assets/OCD.jpg";
 
-export function GoLeer(){
+export const GoLeer = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);

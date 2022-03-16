@@ -1,13 +1,14 @@
+import 'bootstrap';
 import {removeChildren} from "./remove.js";
 import{GoMuerto} from "./Muerto/Muerto.js";
 import{GoDesastre} from "./Desastre/Desastre.js";
 import{GoComentario} from "./Comentario/Comentario.js";
 import{GoHablarle} from "./Hablarle/Hablarle.js";
 import{GoLeer} from "./LeerLibros/LeerLibros.js";
-import White_room from '../src/Assets/White_room.jpg';
+import White_room from './Assets/White_room.jpg';
 import './main.scss';
 
-export function GoIndex(){
+export const GoIndex = () =>{
     const body = document.body;
     if (body.firstChild != null){
         removeChildren(body);
@@ -80,6 +81,14 @@ export function GoIndex(){
     p5.innerHTML = "Por eso mismo, decides hacer algo para cambiar tu vida. Quieres escaparte de ahi de alguna forma u otra sin importar lo que pase. Ese es tu sueño desde que entraste aquí, escapar. Pero debes tener cuidado porque si no <span style='color:red'><b>moriras...</b></span>";
     p6.innerHTML = "Por eso has pensado cual sería el mejor plan para poder salir de ese calabozo blanco y has ordenado las ideas dependiendo de tu probabilidad de salir con vida. Pero solo puedes elegir una por el momento asi que elige:"
     p7.innerHTML = "Pero recuerda, ten cuidado con su paciencia porque se puede ir agotando...";
+    p1.innerHTML = p1.innerHTML.trimEnd();
+    p2.innerHTML = p2.innerHTML.trimEnd();
+    p3.innerHTML = p3.innerHTML.trimEnd();
+    p4.innerHTML = p4.innerHTML.trimEnd();
+    p5.innerHTML = p5.innerHTML.trimEnd();
+    p6.innerHTML = p6.innerHTML.trimEnd();
+    p7.innerHTML = p7.innerHTML.trimEnd();
+    
     a1.onclick = GoDesastre;
     a1.href = "javascript:void(0);";
     a1.innerText = "Crear un desastre";
