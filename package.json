@@ -1,18 +1,19 @@
 {
-  "name": "lab7",
+  "name": "lab6",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "webpack"
+    "build": "webpack --devtool source-map",
+    "start": "webpack-dev-server -d"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-
+    "@babel/core": "^7.17.7",
+    "@babel/preset-env": "^7.16.11",
     "animate.css": "^4.1.1",
     "babel-loader": "^8.2.3",
     "babel-plugin-optimize-i18n": "^0.1.0",
@@ -30,7 +31,8 @@
     "webpack-cli": "^4.9.2"
   },
   "dependencies": {
-
+    "babel-plugin-hash-resolve": "^1.0.2",
+    "core-js": "^3.21.1",
     "lodash": "^4.17.21"
   }
 }
